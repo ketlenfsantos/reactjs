@@ -1,0 +1,30 @@
+.wrapper {
+
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    /*espaçamento entre as colunas*/
+    gap: 2rem;
+    /*side bar e main fiquem alinhados pro topo*/
+    align-items: flex-start;
+
+}
+
+/* PARA FICAR RESPONSIVO*/
+
+@media (max-width: 768px) {
+
+    /* para alterar fonte do html no mobile*/
+    html {
+        font-size: 87, 5%;
+
+    }
+
+    /* quando a tela for menor que 768px altera */
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
